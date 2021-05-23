@@ -1,12 +1,10 @@
 from matplotlib.figure import Figure
-
 from DataManager import DataManager
 
 
 class Plot:
 	figure_mpl = None
 	figure_canvas = None
-
 
 	def __init__(self, cr=None):
 		Plot.figure_mpl = Figure(figsize=(12,6))

@@ -1,5 +1,4 @@
 from DataManager import DataManager
-from DataManager.DataManager import get_dataframe
 from tkinter import ttk, Tk, LabelFrame, StringVar, OptionMenu
 
 

@@ -16,7 +16,7 @@ def get_dataframe(file):
 	return data_fr
 
 
-def get_data_to_treeview( cr=None):
+def get_data_to_treeview(cr=None):
 	if cr is None:
 		cr = available_cr[0]
 	cr_df = get_dataframe(fr'.\Data\{cr}')

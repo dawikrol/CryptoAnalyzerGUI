@@ -1,37 +1,28 @@
 from tkinter import ttk, Tk, LabelFrame, StringVar, OptionMenu
-from tkinter.ttk import Treeview
-import pandas as pd
 from DataManager import DataManager
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-from matplotlib.figure import Figure
-from DataManager.DataManager import get_dataframe
 from GUI.Plot import Plot
 from GUI.Table import Table
 
 
 class MainMenuGUI:
 
-
 	def __init__(self):
 		self.root = Tk()
 		self.frame1 = None
 		self.frame2 = None
 		self.frame3 = None
-		self.treeview = None
 		self.table = Table()
 		self.plot = Plot()
 		self.start()
-
 
 	def start(self):
 		self.root.title('Cryto analyser - DK & BO')
 		self.root.geometry('1200x345')
 		self.init_frames()
 		self.init_drop_down_cr()
-
 		self.table.treeview = ttk.Treeview(self.frame2, style="Treeview")
 		self.update_plot()
-
 		self.root.mainloop()
 
 	def init_frames(self):
