@@ -1,0 +1,16 @@
+Dawid Król
+Bartosz Olszowski
+
+Program uruchamia się za pomocą pliku: cryptoanalyser.py który uruchamia tworzenie GUI.
+MainMenuGUI tworzy elementy z których składa sie cały interfejs użytkownika. Elementy umieszczone są w obiektach tkinter typu frame, 
+aby łatwiej kontrolować ich położenie.
+Użytkownik komunikuje się z programem za pomocą dropdown listy, która umożliwia mu wybór pliku do analizy. Podczas tworzenia tej listy
+sprawdzana jest cała zawartość folderu Data co umożliwia dodawanie nowych plików w odpowiednim formacie. Pobieranie i przekształcanie danych
+odbywa się w module DataManager.
+Tworząc GUI moduł tworzy również obiekty klas Table (który odpowiada za stworzenie tabeli danych) oraz obiekt typu Plot, który odpowiada za wykres.
+Użytkownik zmieniając wartość w polu dropdown listy przekazuje do tych obiektów nowe wartości, a dane zostają odświeżone. 
+
+
+ 
+
+

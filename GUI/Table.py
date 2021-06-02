@@ -18,7 +18,7 @@ class Table:
 		style.map("Treeview", background=[('selected', 'red')])
 		treeview['columns'] = list(dataframe.columns)
 		for col in list(dataframe.columns):
-			treeview.column(col, anchor='w')
+			treeview.column(col, anchor='w', width=100, stretch='NO')
 			treeview.heading(col, text=col, anchor='w')
 		for index, row in dataframe.iterrows():
 			treeview.insert("", 0, text=index, values=list(row))

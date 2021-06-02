@@ -7,7 +7,7 @@ class Plot:
 	figure_canvas = None
 
 	def __init__(self, cr=None):
-		Plot.figure_mpl = Figure(figsize=(12,6))
+		Plot.figure_mpl = Figure(figsize=(7,5))
 		dataframe = DataManager.get_data_to_treeview(cr)
 		self.get_timeseries_plot(dataframe, cr)
 

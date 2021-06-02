@@ -18,7 +18,7 @@ class MainMenuGUI:
 
 	def start(self):
 		self.root.title('Cryto analyser - DK & BO')
-		self.root.geometry('1200x345')
+		self.root.geometry('800x800')
 		self.init_frames()
 		self.init_drop_down_cr()
 		self.table.treeview = ttk.Treeview(self.frame2, style="Treeview")
